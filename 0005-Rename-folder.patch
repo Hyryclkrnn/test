@@ -1,0 +1,17 @@
+From 94504f5ac005c1035c2953106824511c6c9bfbbf Mon Sep 17 00:00:00 2001
+From: Hyryclkrnn <hayriyecalikiran@gmail.com>
+Date: Wed, 14 Nov 2018 13:50:35 +0300
+Subject: [PATCH 5/6] Rename folder
+
+---
+ src/{string.c => string_operations.c} | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename src/{string.c => string_operations.c} (100%)
+
+diff --git a/src/string.c b/src/string_operations.c
+similarity index 100%
+rename from src/string.c
+rename to src/string_operations.c
+-- 
+2.17.1
+

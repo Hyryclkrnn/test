@@ -1,0 +1,45 @@
+From 7a399337a3505f80cadbdade9da45620623ac4c2 Mon Sep 17 00:00:00 2001
+From: Hyryclkrnn <hayriyecalikiran@gmail.com>
+Date: Wed, 14 Nov 2018 10:39:50 +0300
+Subject: [PATCH 2/6] Implemented my_srtlen function
+
+---
+ string.c | 26 ++++++++++++++++++++++++++
+ 1 file changed, 26 insertions(+)
+ create mode 100644 string.c
+
+diff --git a/string.c b/string.c
+new file mode 100644
+index 0000000..4e8eeae
+--- /dev/null
++++ b/string.c
+@@ -0,0 +1,26 @@
++#include <studio.h>
++int my_strlen(char *s)
++{
++   char *p = s;
++
++   while (*p)
++      ++p;
++
++   return (p - s);
++}
++
++int main(void)
++{
++   int i;
++   char *s[] = 
++   {
++      "Git tutorials",
++      "Tutorials Point"
++   };
++
++   for (i = 0; i < 2; ++i)
++      
++   printf("string lenght of %s = %d\n", s[i], my_strlen(s[i]));
++
++   return 0;
++}
+-- 
+2.17.1
+
